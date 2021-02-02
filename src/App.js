@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./resources/styles.css";
+
 import Header from "./components/header_footer/Header";
 import Featured from "./components/featured";
 import VenueInfo from "./components/venueNfo";
@@ -12,15 +13,15 @@ class App extends React.Component {
       <div
         className={"App"}
         style={{
-          height: `${window.innerHeight}px`,
+          height: "1500px",
           background: "cornflowerblue",
         }}
       >
-        <Header></Header>
-        <Featured></Featured>
-        <VenueInfo></VenueInfo>
-        <Highlights></Highlights>
-        <Pricing></Pricing>
+        <Header />
+        <Featured />
+        <VenueInfo />
+        <Highlights />
+        <Pricing />
       </div>
     );
   }
