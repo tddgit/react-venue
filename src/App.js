@@ -25,6 +25,7 @@ class App extends React.Component {
         <Highlights />
         <Pricing />
         <Location />
+        <Footer />
       </div>
     );
   }
