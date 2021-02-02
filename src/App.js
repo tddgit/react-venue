@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./resources/styles.css";
+import Header from "./components/header_footer/Header";
+import Featured from "./components/featured";
+import VenueInfo from "./components/venueNfo";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div
+        className={"App"}
+        style={{ height: "1500px", background: "cornflowerblue" }}
+      >
+        <Header></Header>
+        <Featured></Featured>
+        <VenueInfo></VenueInfo>
+      </div>
+    );
+  }
 }
-
 export default App;
